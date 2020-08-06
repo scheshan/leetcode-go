@@ -1,4 +1,4 @@
-package m22
+package o22
 
 type ListNode struct {
 	Val  int
