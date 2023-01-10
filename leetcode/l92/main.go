@@ -1,7 +1,6 @@
-package main
+package l92
 
 import (
-	"fmt"
 	"github.com/scheshan/leetcode/common"
 )
 
@@ -30,20 +29,7 @@ func reverseBetween(head *ListNode, left int, right int) *ListNode {
 
 	t1.Next = l2
 	t1 = t2
-	t1.Next = nil
-
-	for head != nil {
-		t1.Next = head
-		t1 = head
-		head = head.Next
-	}
+	t1.Next = head
 
 	return l1.Next
-}
-
-func main() {
-	head := &ListNode{Val: 3, Next: &ListNode{Val: 5}}
-	node := reverseBetween(head, 1, 2)
-
-	fmt.Print(node.Val)
 }
