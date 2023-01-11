@@ -1,9 +1,8 @@
-package o24
+package j24
 
-type ListNode struct {
-	Val  int
-	Next *ListNode
-}
+import "github.com/scheshan/leetcode/common"
+
+type ListNode = common.ListNode
 
 func reverseList(head *ListNode) *ListNode {
 	var res *ListNode
