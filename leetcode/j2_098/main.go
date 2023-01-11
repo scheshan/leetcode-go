@@ -1,4 +1,4 @@
-package j2_98
+package j2_098
 
 func uniquePaths(m int, n int) int {
 	state := make([]int, n)
