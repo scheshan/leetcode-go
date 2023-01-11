@@ -1,12 +1,11 @@
-package o06
+package j06
 
-type ListNode struct {
-	Val  int
-	Next *ListNode
-}
+import "github.com/scheshan/leetcode/common"
+
+type ListNode = common.ListNode
 
 func reversePrint(head *ListNode) []int {
-	res := make([]int, 0, 10000)
+	res := make([]int, 10000, 10000)
 	count := 0
 
 	for head != nil {
