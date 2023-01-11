@@ -1,4 +1,4 @@
-package j30
+package j_30
 
 type MinStack struct {
 	arr [][]int

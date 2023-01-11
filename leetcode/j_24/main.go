@@ -1,4 +1,4 @@
-package j24
+package j_24
 
 import "github.com/scheshan/leetcode/common"
 

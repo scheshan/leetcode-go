@@ -1,4 +1,4 @@
-package j06
+package j_06
 
 import "github.com/scheshan/leetcode/common"
 
