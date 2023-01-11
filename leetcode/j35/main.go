@@ -1,4 +1,4 @@
-package o35
+package j35
 
 type Node struct {
 	Val    int
