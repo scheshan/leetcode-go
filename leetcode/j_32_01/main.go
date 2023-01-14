@@ -1,4 +1,4 @@
-package j_32
+package j_32_01
 
 import "github.com/scheshan/leetcode/common"
 
