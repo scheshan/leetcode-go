@@ -1,6 +1,8 @@
 package l264
 
-import "container/heap"
+import (
+	"container/heap"
+)
 
 type Heap struct {
 	arr []int
