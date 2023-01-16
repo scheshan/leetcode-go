@@ -1,23 +1,35 @@
-package j_32
+package j_32_03
 
 import "github.com/scheshan/leetcode/common"
 
 type TreeNode = common.TreeNode
 
-func levelOrder(root *TreeNode) []int {
+func levelOrder(root *TreeNode) [][]int {
 	if root == nil {
 		return nil
 	}
 
-	res := make([]int, 0)
+	res := make([][]int, 0)
+
 	queue := make([]*TreeNode, 0)
 	queue = append(queue, root)
 
+	level := 0
+
 	for len(queue) > 0 {
+		level++
+
 		size := len(queue)
+		r := make([]int, size)
+
 		for i := 0; i < size; i++ {
 			node := queue[0]
-			res = append(res, node.Val)
+
+			if level&1 == 1 {
+				r[i] = node.Val
+			} else {
+				r[size-i-1] = node.Val
+			}
 
 			if node.Left != nil {
 				queue = append(queue, node.Left)
@@ -27,6 +39,8 @@ func levelOrder(root *TreeNode) []int {
 			}
 			queue = queue[1:]
 		}
+
+		res = append(res, r)
 	}
 	return res
 }

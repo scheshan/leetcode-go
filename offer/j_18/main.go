@@ -1,4 +1,4 @@
-package j18
+package j_18
 
 type ListNode struct {
 	Val  int
